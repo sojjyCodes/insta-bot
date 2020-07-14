@@ -1,0 +1,14 @@
+from instapy import InstaPy
+
+session = InstaPy(username="enter you username", password="enter your password")
+session.login()
+
+#Adding tags it should like
+session.like_by_tags(["python", "computer science", "programming", "No To Racism", "Black lives matter" ], amount=5)
+
+#Adding tags it should not live 
+session.set_dont_like(["naked"])
+session.set_do_follow(True, percentage=50)
+session.set_do_comment(False, percentage=100)
+session.end()
+
