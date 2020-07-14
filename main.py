@@ -1,6 +1,6 @@
 from instapy import InstaPy
 
-session = InstaPy(username="eb3nez3r", password="##07085621im26")
+session = InstaPy(username="username", password="password")
 session.login()
 
 #Adding tags it should like
